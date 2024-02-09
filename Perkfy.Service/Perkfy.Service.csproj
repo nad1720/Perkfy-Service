@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AdminService\**" />
+    <Compile Remove="CasheirService\**" />
+    <Compile Remove="ClientAdminService\**" />
+    <Compile Remove="MemberService\**" />
+    <Compile Remove="OwnerService\**" />
+    <Compile Remove="SuperAdminService\**" />
+    <EmbeddedResource Remove="AdminService\**" />
+    <EmbeddedResource Remove="CasheirService\**" />
+    <EmbeddedResource Remove="ClientAdminService\**" />
+    <EmbeddedResource Remove="MemberService\**" />
+    <EmbeddedResource Remove="OwnerService\**" />
+    <EmbeddedResource Remove="SuperAdminService\**" />
+    <None Remove="AdminService\**" />
+    <None Remove="CasheirService\**" />
+    <None Remove="ClientAdminService\**" />
+    <None Remove="MemberService\**" />
+    <None Remove="OwnerService\**" />
+    <None Remove="SuperAdminService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="8.3.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Perkfy.Data\Perkfy.Data.csproj" />
+    <ProjectReference Include="..\Perkfy.DTO\Perkfy.DTO.csproj" />
+    <ProjectReference Include="..\Perkfy.Repository\Perkfy.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
